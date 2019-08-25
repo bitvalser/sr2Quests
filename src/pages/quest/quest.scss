@@ -101,6 +101,7 @@ page-quest {
       display: flex;
       flex: 3;
       flex-direction: column;
+      align-items: center;
       .parameters {
         color: #acb2a8;
         margin: 10px;
@@ -110,6 +111,11 @@ page-quest {
           margin: 6px;
           margin-left: 11px;
         }
+      }
+      .spacer {
+        height: 100%;
+        display: flex;
+        flex: 1;
       }
     }
   }

@@ -1,0 +1,13 @@
+<div class="audio">
+  <audio #audio>
+    <source type="audio/mpeg" />
+  </audio>
+  <div class="player">
+    <div class="text-play">{{ playerText }}</div>
+    <div class="row">
+      <div class="left" (click)="prevMusic()"></div>
+      <div class="play" (click)="togglePlay()" [ngClass]="{ pause: pause }"></div>
+      <div class="right" (click)="nextMusic()"></div>
+    </div>
+  </div>
+</div>

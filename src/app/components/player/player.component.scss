@@ -1,0 +1,60 @@
+app-player {
+  .player {
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #00879a, #02677b);
+    margin: 5px;
+    flex-direction: column;
+    .text-play {
+      display: flex;
+      padding: 5px;
+      color: #fff;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      display: block;
+    }
+    .row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 5px;
+    }
+    .left {
+      background: url('../assets/imgs/icon-left.png');
+      width: 20px;
+      height: 35px;
+      margin-right: 15px;
+      &:active {
+        opacity: 0.5;
+      }
+    }
+    .right {
+      background: url('../assets/imgs/icon-right.png');
+      width: 20px;
+      height: 35px;
+      margin-left: 15px;
+      &:active {
+        opacity: 0.5;
+      }
+    }
+    .play {
+      background: url('../assets/imgs/icon-play.png');
+      width: 44px;
+      height: 44px;
+      &:active {
+        opacity: 0.5;
+      }
+      &.pause {
+        background: url('../assets/imgs/icon-pause.png');
+      }
+    }
+  }
+}
