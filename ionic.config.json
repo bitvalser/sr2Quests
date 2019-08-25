@@ -1,5 +1,7 @@
 {
   "name": "sr2Quests",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

@@ -1,3 +1,95 @@
 page-home {
-
+  background: url('../../assets/imgs/BG.jpg');
+  background-size: cover;
+  .container {
+    font-family: Verdana, Geneva, sans-serif;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    .quest-list {
+      margin-left: 4px;
+      margin-top: 10px;
+      border-radius: 11px 0 0 0;
+      padding-top: 3px;
+      flex: 10;
+      display: flex;
+      flex-direction: column;
+      background: black;
+    }
+    .border {
+      width: 8px;
+      height: 100%;
+      background: url('../../assets/imgs/line.png');
+      margin-left: -1px;
+      margin-top: 10px;
+    }
+    .quest {
+      color: #869e6e;
+      margin: 1px 2px;
+      display: flex;
+      width: 98%;
+      margin-left: 1%;
+      align-items: center;
+      padding: 4px 8px;
+      background: url('../../assets/imgs/quest-slot.jpg');
+      background-size: 100% 29px;
+      border-radius: 9px;
+      height: 29px;
+      font-size: 11px;
+      &.selected {
+        background: url('../../assets/imgs/quest-active.jpg');
+        background-size: 100% 29px;
+      }
+      .name {
+        margin-bottom: 2px;
+      }
+      .description {
+        text-align: right;
+        display: inline-block;
+        font-size: 10px;
+        margin-bottom: 2px;
+      }
+      .spacer {
+        flex: 1;
+      }
+    }
+    .description-block {
+      background: #a1b487;
+      margin-top: 10px;
+      margin-right: 4px;
+      border-radius: 0 9px 0 0;
+      display: flex;
+      flex: 6;
+      flex-direction: column;
+      align-items: center;
+      .quest-image {
+        margin: 12px;
+        width: 70%;
+        object-fit: contain;
+      }
+      .text {
+        height: 100%;
+        padding: 5px;
+        font-size: 12px;
+        width: 100%;
+        overflow: auto;
+      }
+      .start-wrapper {
+        width: 100%;
+        .start {
+          width: 100%;
+          height: 30px;
+          background: linear-gradient(180deg, #0299ae, #006478);
+          font-family: Storopia;
+          font-weight: bold;
+          font-size: 16px;
+          color: #002339;
+        }
+        .start:active {
+          background: linear-gradient(180deg, #006478, #0299ae);
+        }
+      }
+    }
+  }
 }

@@ -1,14 +1,22 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+<div class="container">
+  <div class="quest-list">
+    <div
+      *ngFor="let quest of questList"
+      class="quest"
+      [ngClass]="{ selected: quest.name === selectedQuest }"
+      (click)="selectQuest(quest.name)"
+    >
+      <div class="name">{{ quest.title }}</div>
+      <div class="spacer"></div>
+      <div class="description">{{ quest.genre }}</div>
+    </div>
+  </div>
+  <div class="border"></div>
+  <div class="description-block">
+    <!-- <img src="../../assets/imgs/image-bg.png" class="quest-image" /> -->
+    <div class="text" [innerHTML]="description"></div>
+    <div class="start-wrapper">
+      <button [disabled]="!selectedQuest" class="start" (click)="startQuest()">Старт</button>
+    </div>
+  </div>
+</div>
