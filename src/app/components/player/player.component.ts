@@ -29,10 +29,9 @@ export class PlayerComponent implements AfterContentInit {
     };
   }
 
-  public start(): void {
-    this.playerText = this.playList[0];
-    this.audio.nativeElement.src = `./assets/musics/${this.playerText}`;
-    this.audio.nativeElement.play();
+  public togglePlay(): void {
+    this.pause = !this.pause;
+    this.audio.nativeElement[this.pause ? 'play' : 'pause']();
   }
 
   public nextMusic(): void {
