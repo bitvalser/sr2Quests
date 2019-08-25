@@ -16,6 +16,7 @@ page-home {
       display: flex;
       flex-direction: column;
       background: black;
+      overflow: auto;
     }
     .border {
       width: 8px;
@@ -35,7 +36,7 @@ page-home {
       background: url('../assets/imgs/quest-slot.jpg');
       background-size: 100% 29px;
       border-radius: 9px;
-      height: 29px;
+      min-height: 29px;
       font-size: 11px;
       &.selected {
         background: url('../assets/imgs/quest-active.jpg');

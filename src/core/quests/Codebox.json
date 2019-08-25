@@ -1,0 +1,2790 @@
+{
+    "date": "<Date>",
+    "fromPlanet": "Дырдыр",
+    "fromStar": "Ион",
+    "info": {
+        "descriptionText": "Вам некуда себя деть, <Ranger>? Ну, тогда у нас действительно найдется для вас задание. У наших братьев с планеты <ToPlanet>, что в системе <ToStar>, скоро намечается большой праздник - День коронации Великого Малокрха, главного предводителя всех малоков этой планеты. Коронация считается праздником общепланетного масштаба, который может существенно поднять боевой дух населения. Особенно если новоявленный Малокрх даст клятву на черепе Первого Великого Малокрха Раммора Заккарадского. Вся проблема как раз в этом черепе. Он хранится в специальном сейфе, метод открытия которого, увы, утерян. \r\n\r\nЯ слышал, что вас, рейнджеров, в числе прочего обучают и всяким мудреным штучкам типа вскрытия сейфов. Если вы поможете нашим братьям с планеты <ToPlanet> добыть череп до коронации, то мы заплатим вам <Money> cr. Однако советую вам поторопиться - коронация назначена на <Date>.",
+        "difficulty": 65,
+        "doneImmediately": true,
+        "planetRaces": 255,
+        "playerRaces": 255,
+        "playerTypes": 255,
+        "races": 1,
+        "relation": 50,
+        "winnerText": "Спасибо огромное, <Ranger>, вы прямо выручили наших братьев с планеты <ToPlanet>! Коронация транслировалась на все малокские планеты галактики, и диктор красочно расписал, что череп Первого Великого Малокрха был добыт с помощью правительства планеты <FromPlanet>, что сильно подняло наш авторитет среди остальных малокских планет. \r\n\r\nНадеюсь, заслуженная награда в <Money> cr полностью вас удовлетворит. Если нет, могу предложить еще кофейку."
+    },
+    "locations": {
+        "location29": {
+            "day": false,
+            "death": false,
+            "descriptionExpression": true,
+            "descriptions": [
+                "Вместе с Икссом вы поднялись на несколько этажей вверх, зашли в небольшую комнату с опущенными шторами и ярко горящей лампой на столе. Рядом с лампой на небольшой подставочке находился прямоугольной формы темный предмет с небольшим экраном на лицевой части. Иксс взглянул на часы и произнес:\r\n- Сейчас разблокируется.\r\nЯщик на столе в одно мгновение ожил, на лицевой панели зажглись цифры, несколько секунд танцевали в бешеном ритме, а потом внезапно успокоились.\r\n- 600 часов назад мы уже пытались его открыть... Безуспешно. Теперь вся надежда на вас, <Ranger>. Как видите, ключ представляет собой набор цифр от {1} до {8} в квадрате <clr>4x4<clrEnd> ячейки. Необходимо из имеющейся комбинации собрать открывающую, ту, которую мы нашли у погибшего Хранителя. Вот это - счетчик переключений; если вы сейчас не уложитесь в нужное число переключений, то сейф снова заблокируется, и тогда на церемонии Коронации не будет черепа... со всеми вытекающими отсюда последствиями.",
+                "- Панель ввода представляет собой квадратное поле <clr>4x4<clrEnd> клетки, причем одна клетка пустует, а все остальные заполнены цифрами от {1} до {8}. Так вот, переключение - это перемещение любой соседней с пустой ячейкой клетки с цифрой на место пустой ячейки. При этом счетчик перемещений уменьшается. Перемещать ячейки можно только по горизонтали или по вертикали, но не по диагонали.\r\n\r\n- Ясно, - сказали вы, хотя вам было не совсем и ясно. Ничего, практика покажет, что это за система и как ее преодолеть.",
+                "Вы взяли лист в руки и развернули. На нем было изображено следующее:\r\n<fix>\r\n _______________\r\n| {6} | {5} | {4} | {3} |\r\n|___|___|___|___|\r\n| {7} | {8} | {1} | {2} |\r\n|___|___|___|___|\r\n| {2} | {1} | {8} | {7} |\r\n|___|___|___|___|\r\n| {3} | {4} | {5} |   |\r\n|___|___|___|___|</fix>\r\n\r\n- Не беспокойтесь, - сказал пеленг. - Код всегда будет у вас перед глазами, так что вам не нужно его запоминать."
+            ],
+            "expression": "[p6]",
+            "id": 29,
+            "modifiers": [
+            ],
+            "transitions": {
+                "transition194": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 6,
+                            "rangeFrom": 0,
+                            "rangeTo": 10000,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 8,
+                            "rangeFrom": 1,
+                            "rangeTo": 1,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 29,
+                    "globalCondition": "",
+                    "id": 194,
+                    "modifiers": [
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_ASSIGN",
+                            "param": 1,
+                            "value": 44,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "7632",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "5824",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "3175",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "4810",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 5,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "15",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 6,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 24,
+                            "visibility": "VISIBILITY_SHOW"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 8,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "Приступить к решению",
+                    "to": 34
+                },
+                "transition195": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 6,
+                            "rangeFrom": 0,
+                            "rangeTo": 10000,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 8,
+                            "rangeFrom": 2,
+                            "rangeTo": 2,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 29,
+                    "globalCondition": "",
+                    "id": 195,
+                    "modifiers": [
+                        {
+                            "expression": "44",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "4631",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "7584",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "3152",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "8270",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 5,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "72",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 6,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 28,
+                            "visibility": "VISIBILITY_SHOW"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 8,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "Приступить к решению",
+                    "to": 34
+                },
+                "transition196": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 6,
+                            "rangeFrom": 0,
+                            "rangeTo": 10000,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 8,
+                            "rangeFrom": 3,
+                            "rangeTo": 3,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 29,
+                    "globalCondition": "",
+                    "id": 196,
+                    "modifiers": [
+                        {
+                            "expression": "44",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "5643",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "7127",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "4215",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "3880",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 5,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "85",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 6,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 44,
+                            "visibility": "VISIBILITY_SHOW"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 8,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "Приступить к решению",
+                    "to": 34
+                },
+                "transition197": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 6,
+                            "rangeFrom": 0,
+                            "rangeTo": 10000,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 8,
+                            "rangeFrom": 4,
+                            "rangeTo": 4,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 29,
+                    "globalCondition": "",
+                    "id": 197,
+                    "modifiers": [
+                        {
+                            "expression": "12",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "7654",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "583",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "3182",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "4271",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 5,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "5307",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 6,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 31,
+                            "visibility": "VISIBILITY_SHOW"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 8,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "Приступить к решению",
+                    "to": 33
+                },
+                "transition202": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 9,
+                            "rangeFrom": 1,
+                            "rangeTo": 2,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 29,
+                    "globalCondition": "",
+                    "id": 202,
+                    "modifiers": [
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_ASSIGN",
+                            "param": 9,
+                            "value": 1,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 9,
+                    "priority": 1,
+                    "title": "Отказаться от выполнения задания",
+                    "to": 37
+                },
+                "transition204": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 6,
+                            "rangeFrom": 0,
+                            "rangeTo": 10000,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 29,
+                    "globalCondition": "",
+                    "id": 204,
+                    "modifiers": [
+                        {
+                            "expression": "2",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 6,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 1,
+                    "position": 7,
+                    "priority": 1,
+                    "title": "Попросить уточнить про переключения",
+                    "to": 40
+                },
+                "transition209": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 6,
+                            "rangeFrom": 0,
+                            "rangeTo": 10000,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 29,
+                    "globalCondition": "",
+                    "id": 209,
+                    "modifiers": [
+                        {
+                            "expression": "3",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 6,
+                            "value": 2014,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 1,
+                    "position": 6,
+                    "priority": 1,
+                    "title": "Взглянуть на лист с кодом",
+                    "to": 40
+                }
+            },
+            "type": "LOCATION_NORMAL",
+            "x": 576,
+            "y": 302
+        },
+        "location32": {
+            "day": false,
+            "death": false,
+            "descriptionExpression": false,
+            "descriptions": [
+                "Что-то внутри сейфа щелкнуло, и дверца открылась. Иксс за вашей спиной облегченно вздохнул. Вы же с любопытством стали рассматривать малокский череп, размещенный на черной бархатной подушечке. Иксс аккуратно оттеснил вас в сторону и вынул череп из сейфа.\r\n- Поразительно, столько лет - и как новый, - не удержался от возгласа пеленг. - Я позабочусь о том, чтобы артефакт был полностью готов к завтрашней Коронации. А вы, <Ranger>, потрясающе справились с возложенной на вас миссией. Только жесткие условия договора мешают мне наградить вас немедленно. Но не беспокойтесь, правительство планеты <FromPlanet> уже ждет вас, чтобы выплатить причитающиеся <Money> cr."
+            ],
+            "expression": "",
+            "id": 32,
+            "modifiers": [
+            ],
+            "transitions": {
+            },
+            "type": "LOCATION_SUCCESS",
+            "x": 704,
+            "y": 302
+        },
+        "location33": {
+            "day": false,
+            "death": false,
+            "descriptionExpression": true,
+            "descriptions": [
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n|   | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} |   | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} |   | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix> \r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} |   |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n|   | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} |   | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} |   | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} |   |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?"
+            ],
+            "expression": "4*(([p1] mod 10)=2)+([p1] div 10)",
+            "id": 33,
+            "modifiers": [
+            ],
+            "transitions": {
+                "transition172": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 33,
+                    "globalCondition": "([p1] div 10)>1",
+                    "id": 172,
+                    "modifiers": [
+                        {
+                            "expression": "[p1]-10",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "(([p1] mod 10)>1)*([p2])+([p1]=21)*(([p2] div 1000)*100+[p2] mod 100)+([p1]=31)*(([p2] div 1000)*1000+(([p2] div 100) mod 10)*10+[p2] mod 10)+([p1]=41)*(([p2] div 100)*100+(([p2] div 10) mod 10))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "(([p1] mod 10)<>2)*([p3])+([p1]=22)*(([p3] div 1000)*100+[p3] mod 100)+([p1]=32)*(([p3] div 1000)*1000+(([p3] div 100) mod 10)*10+([p3] mod 10))+([p1]=42)*(([p3] div 100)*100+(([p3] div 10) mod 10))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 2,
+                    "priority": 1,
+                    "title": "Фрагмент {([p6] div 10)  mod 10} левее пустой клетки",
+                    "to": 35
+                },
+                "transition173": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 33,
+                    "globalCondition": "([p1] mod 10)<4",
+                    "id": 173,
+                    "modifiers": [
+                        {
+                            "expression": "[p1]+1",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p2]+(([p1] mod 10)=1)*((([p3] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p3] div 100) mod 10)*100*(([p1] div 10)=2)+(([p3] div 10) mod 10)*10*(([p1] div 10)=3)+(([p3] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p3]+(([p1] mod 10)=1)*(-(([p3] div 1000) mod 10)*1000*(([p1] div 10)=1)-(([p3] div 100) mod 10)*100*(([p1] div 10)=2)-(([p3] div 10) mod 10)*10*(([p1] div 10)=3)-(([p3] div 1) mod 10)*1*(([p1] div 10)=4))+(([p1] mod 10)=2)*((([p4] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p4] div 100) mod 10)*100*(([p1] div 10)=2)+(([p4] div 10) mod 10)*10*(([p1] div 10)=3)+(([p4] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p4]+(([p1] mod 10)=2)*(-(([p4] div 1000) mod 10)*1000*(([p1] div 10)=1)-(([p4] div 100) mod 10)*100*(([p1] div 10)=2)-(([p4] div 10) mod 10)*10*(([p1] div 10)=3)-(([p4] div 1) mod 10)*1*(([p1] div 10)=4))+(([p1] mod 10)=3)*((([p5] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p5] div 100) mod 10)*100*(([p1] div 10)=2)+(([p5] div 10) mod 10)*10*(([p1] div 10)=3)+(([p5] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p5]+(([p1] mod 10)=3)*(-(([p5] div 10000) mod 10)*10000*(([p1] div 10)=1)-(([p5] div 1000) mod 10)*1000*(([p1] div 10)=3)-(([p5] div 100) mod 10)*100*(([p1] div 10)=3)-(([p5] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 5,
+                            "value": 1722,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 3,
+                    "priority": 1,
+                    "title": "Фрагмент {([p6] div 100)  mod 10} ниже пустой клетки",
+                    "to": 35
+                },
+                "transition174": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 33,
+                    "globalCondition": "([p1] mod 10)>1",
+                    "id": 174,
+                    "modifiers": [
+                        {
+                            "expression": "[p1]-1",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p2]+(([p1] mod 10)=2)*(-(([p2] div 1000) mod 10)*1000*(([p1] div 10)=1)-(([p2] div 100) mod 10)*100*(([p1] div 10)=2)-(([p2] div 10) mod 10)*10*(([p1] div 10)=3)-(([p2] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p3]+(([p1] mod 10)=3)*(-(([p3] div 1000) mod 10)*1000*(([p1] div 10)=1)-(([p3] div 100) mod 10)*100*(([p1] div 10)=2)-(([p3] div 10) mod 10)*10*(([p1] div 10)=3)-(([p3] div 1) mod 10)*1*(([p1] div 10)=4))+(([p1] mod 10)=2)*((([p2] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p2] div 100) mod 10)*100*(([p1] div 10)=2)+(([p2] div 10) mod 10)*10*(([p1] div 10)=3)+(([p2] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p4]+(([p1] mod 10)=4)*(-(([p4] div 1000) mod 10)*1000*(([p1] div 10)=1)-(([p4] div 100) mod 10)*100*(([p1] div 10)=2)-(([p4] div 10) mod 10)*10*(([p1] div 10)=3)-(([p4] div 1) mod 10)*1*(([p1] div 10)=4))+(([p1] mod 10)=3)*((([p3] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p3] div 100) mod 10)*100*(([p1] div 10)=2)+(([p3] div 10) mod 10)*10*(([p1] div 10)=3)+(([p3] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p5]+(([p1] mod 10)=4)*((([p4] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p4] div 100) mod 10)*100*(([p1] div 10)=2)+(([p4] div 10) mod 10)*10*(([p1] div 10)=3)+(([p4] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 5,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 1,
+                    "priority": 1,
+                    "title": "Фрагмент {([p6] div 1)  mod 10} выше пустой клетки",
+                    "to": 35
+                },
+                "transition175": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 33,
+                    "globalCondition": "([p1] div 10)<4",
+                    "id": 175,
+                    "modifiers": [
+                        {
+                            "expression": "[p1]+10",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "(([p1] mod 10)>1)*([p2])+([p1]=11)*(([p2] div 100)*1000+[p2] mod 100)+([p1]=21)*(([p2] div 1000)*1000+(([p2] div 10) mod 10)*100+[p2] mod 10)+([p1]=31)*(([p2] div 100)*100+([p2] mod 10)*10)",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "(([p1] mod 10)<>2)*([p3])+([p1]=12)*(([p3] div 100)*1000+[p3] mod 100)+([p1]=22)*(([p3] div 1000)*1000+(([p3] div 10) mod 10)*100+[p3] mod 10)+([p1]=32)*(([p3] div 100)*100+([p3] mod 10)*10)",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 4,
+                    "priority": 1,
+                    "title": "Фрагмент {([p6] div 1000)  mod 10} правее пустой клетки",
+                    "to": 35
+                },
+                "transition188": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 6543,
+                            "rangeTo": 6543,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 7812,
+                            "rangeTo": 7812,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 2187,
+                            "rangeTo": 2187,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 3450,
+                            "rangeTo": 3450,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 33,
+                    "globalCondition": "",
+                    "id": 188,
+                    "modifiers": [
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 5,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 0,
+                    "priority": 1,
+                    "title": "Никакой, ключ собран",
+                    "to": 32
+                },
+                "transition207": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 9,
+                            "rangeFrom": 1,
+                            "rangeTo": 2,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 33,
+                    "globalCondition": "[p2]<>6543 or [p3]<>7812 or [p4]<>2187 or [p5]<>3450",
+                    "id": 207,
+                    "modifiers": [
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_ASSIGN",
+                            "param": 9,
+                            "value": 2,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 1,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "Отказаться от выполнения задания",
+                    "to": 37
+                }
+            },
+            "type": "LOCATION_NORMAL",
+            "x": 576,
+            "y": 423
+        },
+        "location34": {
+            "day": false,
+            "death": false,
+            "descriptionExpression": true,
+            "descriptions": [
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n|   | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} |   | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} |   | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} |   |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________  \r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n|   | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} |   | {([p5] mod 100) div 10} | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} |   | {[p5] mod 10} |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?",
+                "<fix>Ключ                      Образец\r\n _______________        _______________\r\n| {[p2] div 1000} | {([p2] mod 1000) div 100} | {([p2] mod 100) div 10} | {[p2] mod 10} |      | {6} | {5} | {4} | {3} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p3] div 1000} | {([p3] mod 1000) div 100} | {([p3] mod 100) div 10} | {[p3] mod 10} |      | {7} | {8} | {1} | {2} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p4] div 1000} | {([p4] mod 1000) div 100} | {([p4] mod 100) div 10} | {[p4] mod 10} |      | {2} | {1} | {8} | {7} |\r\n|___|___|___|___|      |___|___|___|___|\r\n| {[p5] div 1000} | {([p5] mod 1000) div 100} | {([p5] mod 100) div 10} |   |      | {3} | {4} | {5} |   |\r\n|___|___|___|___|      |___|___|___|___| </fix>\r\n\r\nКакой фрагмент переместить в свободную ячейку?"
+            ],
+            "expression": "4*(([p1] mod 10)=4)+([p1] div 10)",
+            "id": 34,
+            "modifiers": [
+            ],
+            "transitions": {
+                "transition183": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 34,
+                    "globalCondition": "([p1] mod 10)>1",
+                    "id": 183,
+                    "modifiers": [
+                        {
+                            "expression": "[p1]-1",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p2]+(([p1] mod 10)=2)*(-(([p2] div 10000) mod 10)*10000*(([p1] div 10)=1)-(([p2] div 1000) mod 10)*1000*(([p1] div 10)=2)-(([p2] div 100) mod 10)*100*(([p1] div 10)=3)-(([p2] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p3]+(([p1] mod 10)=3)*(-(([p3] div 1000) mod 10)*1000*(([p1] div 10)=1)-(([p3] div 100) mod 10)*100*(([p1] div 10)=2)-(([p3] div 10) mod 10)*10*(([p1] div 10)=3)-(([p3] div 1) mod 10)*1*(([p1] div 10)=4))+(([p1] mod 10)=2)*((([p2] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p2] div 100) mod 10)*100*(([p1] div 10)=2)+(([p2] div 10) mod 10)*10*(([p1] div 10)=3)+(([p2] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p4]+(([p1] mod 10)=4)*(-(([p4] div 1000) mod 10)*1000*(([p1] div 10)=1)-(([p4] div 100) mod 10)*100*(([p1] div 10)=2)-(([p4] div 10) mod 10)*10*(([p1] div 10)=3)-(([p4] div 1) mod 10)*1*(([p1] div 10)=4))+(([p1] mod 10)=3)*((([p3] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p3] div 100) mod 10)*100*(([p1] div 10)=2)+(([p3] div 10) mod 10)*10*(([p1] div 10)=3)+(([p3] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p5]+(([p1] mod 10)=4)*((([p4] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p4] div 100) mod 10)*100*(([p1] div 10)=2)+(([p4] div 10) mod 10)*10*(([p1] div 10)=3)+(([p4] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 5,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 1,
+                    "priority": 1,
+                    "title": "Фрагмент {([p6] div 1)  mod 10} выше пустой клетки",
+                    "to": 35
+                },
+                "transition184": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 34,
+                    "globalCondition": "([p1] mod 10)<4",
+                    "id": 184,
+                    "modifiers": [
+                        {
+                            "expression": "[p1]+1",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p2]+(([p1] mod 10)=1)*((([p3] div 10000) mod 10)*10000*(([p1] div 10)=1)+(([p3] div 1000) mod 10)*1000*(([p1] div 10)=2)+(([p3] div 100) mod 10)*100*(([p1] div 10)=3)+(([p3] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p3]+(([p1] mod 10)=1)*(-(([p3] div 1000) mod 10)*1000*(([p1] div 10)=1)-(([p3] div 100) mod 10)*100*(([p1] div 10)=2)-(([p3] div 10) mod 10)*10*(([p1] div 10)=3)-(([p3] div 1) mod 10)*1*(([p1] div 10)=4))+(([p1] mod 10)=2)*((([p4] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p4] div 100) mod 10)*100*(([p1] div 10)=2)+(([p4] div 10) mod 10)*10*(([p1] div 10)=3)+(([p4] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p4]+(([p1] mod 10)=2)*(-(([p4] div 1000) mod 10)*1000*(([p1] div 10)=1)-(([p4] div 100) mod 10)*100*(([p1] div 10)=2)-(([p4] div 10) mod 10)*10*(([p1] div 10)=3)-(([p4] div 1) mod 10)*1*(([p1] div 10)=4))+(([p1] mod 10)=3)*((([p5] div 1000) mod 10)*1000*(([p1] div 10)=1)+(([p5] div 100) mod 10)*100*(([p1] div 10)=2)+(([p5] div 10) mod 10)*10*(([p1] div 10)=3)+(([p5] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "[p5]+(([p1] mod 10)=3)*(-(([p5] div 1000) mod 10)*1000*(([p1] div 10)=1)-(([p5] div 100) mod 10)*100*(([p1] div 10)=2)-(([p5] div 10) mod 10)*10*(([p1] div 10)=3)-(([p5] div 1) mod 10)*1*(([p1] div 10)=4))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 5,
+                            "value": 1722,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 3,
+                    "priority": 1,
+                    "title": "Фрагмент {([p6] div 100)  mod 10} ниже пустой клетки",
+                    "to": 35
+                },
+                "transition185": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 34,
+                    "globalCondition": "([p1] div 10)>1",
+                    "id": 185,
+                    "modifiers": [
+                        {
+                            "expression": "[p1]-10",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "(([p1] mod 10)<>3)*([p4])+([p1]=23)*(([p4] div 1000)*100+[p4] mod 100)+([p1]=33)*(([p4] div 1000)*1000+(([p4] div 100) mod 10)*10+[p4] mod 10)+([p1]=43)*(([p4] div 100)*100+(([p4] div 10) mod 10))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "(([p1] mod 10)<>4)*([p5])+([p1]=24)*(([p5] div 1000)*100+[p5] mod 100)+([p1]=34)*(([p5] div 1000)*1000+(([p5] div 100) mod 10)*10+[p5] mod 10)+([p1]=44)*(([p5] div 100)*100+(([p5] div 10) mod 10))",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 5,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 2,
+                    "priority": 1,
+                    "title": "Фрагмент {([p6] div 10)  mod 10} левее пустой клетки",
+                    "to": 35
+                },
+                "transition186": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 1,
+                            "rangeFrom": 11,
+                            "rangeTo": 44,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 111,
+                            "rangeTo": 8888,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 34,
+                    "globalCondition": "([p1] div 10)<4",
+                    "id": 186,
+                    "modifiers": [
+                        {
+                            "expression": "[p1]+10",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 1,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "(([p1] mod 10)<>3)*([p4])+([p1]=13)*(([p4] div 100)*1000+[p4] mod 100)+([p1]=23)*(([p4] div 1000)*1000+(([p4] div 10) mod 10)*100+[p4] mod 10)+([p1]=33)*(([p4] div 100)*100+([p4] mod 10)*10)",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "(([p1] mod 10)<>4)*([p5])+([p1]=14)*(([p5] div 100)*1000+[p5] mod 100)+([p1]=24)*(([p5] div 1000)*1000+(([p5] div 10) mod 10)*100+[p5] mod 10)+([p1]=34)*(([p5] div 100)*100+([p5] mod 10)*10)",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 5,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 4,
+                    "priority": 1,
+                    "title": "Фрагмент {([p6] div 1000)  mod 10} правее пустой клетки",
+                    "to": 35
+                },
+                "transition187": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 2,
+                            "rangeFrom": 6543,
+                            "rangeTo": 6543,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 3,
+                            "rangeFrom": 7812,
+                            "rangeTo": 7812,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 4,
+                            "rangeFrom": 2187,
+                            "rangeTo": 2187,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 5,
+                            "rangeFrom": 3450,
+                            "rangeTo": 3450,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 34,
+                    "globalCondition": "",
+                    "id": 187,
+                    "modifiers": [
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 2,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 3,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 4,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 5,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 0,
+                    "priority": 1,
+                    "title": "Никакой, ключ собран",
+                    "to": 32
+                },
+                "transition208": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 9,
+                            "rangeFrom": 1,
+                            "rangeTo": 2,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 34,
+                    "globalCondition": "[p2]<>6543 or [p3]<>7812 or [p4]<>2187 or [p5]<>3450",
+                    "id": 208,
+                    "modifiers": [
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_ASSIGN",
+                            "param": 9,
+                            "value": 2,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 1,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "Отказаться от выполнения задания",
+                    "to": 37
+                }
+            },
+            "type": "LOCATION_NORMAL",
+            "x": 704,
+            "y": 423
+        },
+        "location35": {
+            "day": false,
+            "death": false,
+            "descriptionExpression": false,
+            "descriptions": [
+            ],
+            "expression": "",
+            "id": 35,
+            "modifiers": [
+                {
+                    "expression": "0",
+                    "operation": "OPERATION_EXPRESSION",
+                    "param": 6,
+                    "value": 0,
+                    "visibility": "VISIBILITY_NO_CHANGE"
+                }
+            ],
+            "transitions": {
+                "transition180": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 6,
+                            "rangeFrom": 0,
+                            "rangeTo": 10000,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 35,
+                    "globalCondition": "([p1] mod 10)=3",
+                    "id": 180,
+                    "modifiers": [
+                        {
+                            "expression": "[p6]+(([p1] div 10)=1)*(1*([p3] div 1000)+10*0+100*([p5] div 1000)+1000*(([p4] div 100) mod 10))+(([p1] div 10)=2)*(1*(([p3] div 100) mod 10)+10*(([p4] div 1000) mod 10)+100*(([p5] div 100) mod 10)+1000*(([p4] div 10) mod 10))+(([p1] div 10)=3)*(1*(([p3] div 10) mod 10)+10*(([p4] div 100) mod 10)+100*(([p5] div 10) mod 10)+1000*(([p4] div 1) mod 10))+(([p1] div 10)=4)*(1*(([p3] div 1) mod 10)+10*(([p4] div 10) mod 10)+100*(([p5] div 1) mod 10)+1000*0)",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 6,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "",
+                    "to": 36
+                },
+                "transition189": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 6,
+                            "rangeFrom": 0,
+                            "rangeTo": 10000,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 35,
+                    "globalCondition": "([p1] mod 10)=4",
+                    "id": 189,
+                    "modifiers": [
+                        {
+                            "expression": "[p6]+(([p1] div 10)=1)*(1*([p4] div 1000)+10*0+1000*(([p5] div 100) mod 10))+(([p1] div 10)=2)*(1*(([p4] div 100) mod 10)+10*(([p5] div 1000) mod 10)+1000*(([p5] div 10) mod 10))+(([p1] div 10)=3)*(1*(([p4] div 10) mod 10)+10*(([p5] div 100) mod 10)+1000*(([p5] div 1) mod 10))+(([p1] div 10)=4)*(1*(([p4] div 1) mod 10)+10*(([p5] div 10) mod 10)+1000*0)",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 6,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "",
+                    "to": 36
+                },
+                "transition190": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 6,
+                            "rangeFrom": 0,
+                            "rangeTo": 10000,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 35,
+                    "globalCondition": "([p1] mod 10)=1",
+                    "id": 190,
+                    "modifiers": [
+                        {
+                            "expression": "[p6]+(([p1] div 10)=1)*(10*0+100*([p3] div 1000)+1000*(([p2] div 100) mod 10))+(([p1] div 10)=2)*(10*(([p2] div 1000) mod 10)+100*(([p3] div 100) mod 10)+1000*(([p2] div 10) mod 10))+(([p1] div 10)=3)*(10*(([p2] div 100) mod 10)+100*(([p3] div 10) mod 10)+1000*(([p2] div 1) mod 10))+(([p1] div 10)=4)*(10*(([p2] div 10) mod 10)+100*([p3] mod 10)+1000*0)",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 6,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "",
+                    "to": 36
+                },
+                "transition191": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 6,
+                            "rangeFrom": 0,
+                            "rangeTo": 10000,
+                            "values": [
+                            ]
+                        },
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 35,
+                    "globalCondition": "([p1] mod 10)=2",
+                    "id": 191,
+                    "modifiers": [
+                        {
+                            "expression": "[p6]+(([p1] div 10)=1)*(1*([p2] div 1000)+10*0+100*([p4] div 1000)+1000*(([p3] div 100) mod 10))+(([p1] div 10)=2)*(1*(([p2] div 100) mod 10)+10*(([p3] div 1000) mod 10)+100*(([p4] div 100) mod 10)+1000*(([p3] div 10) mod 10))+(([p1] div 10)=3)*(1*(([p2] div 10) mod 10)+10*(([p3] div 100) mod 10)+100*(([p4] div 10) mod 10)+1000*(([p3] div 1) mod 10))+(([p1] div 10)=4)*(1*(([p2] div 1) mod 10)+10*(([p3] div 10) mod 10)+100*(([p4] div 1) mod 10)+1000*0)",
+                            "operation": "OPERATION_EXPRESSION",
+                            "param": 6,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        },
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "",
+                    "to": 36
+                }
+            },
+            "type": "LOCATION_NORMAL",
+            "x": 576,
+            "y": 544
+        },
+        "location36": {
+            "day": false,
+            "death": false,
+            "descriptionExpression": false,
+            "descriptions": [
+            ],
+            "expression": "",
+            "id": 36,
+            "modifiers": [
+            ],
+            "transitions": {
+                "transition181": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 36,
+                    "globalCondition": "([p1] mod 10)<3",
+                    "id": 181,
+                    "modifiers": [
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": -1,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "",
+                    "to": 33
+                },
+                "transition182": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 36,
+                    "globalCondition": "([p1] mod 10)>2",
+                    "id": 182,
+                    "modifiers": [
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": -1,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "",
+                    "to": 34
+                }
+            },
+            "type": "LOCATION_NORMAL",
+            "x": 704,
+            "y": 544
+        },
+        "location37": {
+            "day": false,
+            "death": false,
+            "descriptionExpression": true,
+            "descriptions": [
+                "- Пожалуй, я не справлюсь, - честно признались вы. - Я не очень-то хорош во взломе сейфов.\r\n\r\n- Что ж, спасибо, по крайней мере, что вы в этом признались, - сказал Иксс. - У нас будет шанс найти другого взломщика.\r\n\r\nС этими словами Иксс попрощался с вами, и вы отправились обратно в космопорт.\r\n\r\n<clr>Ваша миссия провалена.<clrEnd>",
+                "- Пожалуй, я не справлюсь, - честно признались вы. - Я просто не успею его взломать за оставшееся время.\r\n\r\n- К сожалению, <Ranger>, вы не оправдали оказанного вам доверия. А значит, коронация пройдёт без черепа. Малоки будут вне себя от ярости, когда узнают об этом. Лично я собираюсь побыстрее сваливать с этой планеты. Благо, 70% гонорара мне заплатили вперёд, это было моё обязательное условие... \r\n\r\nС этими словами Иксс покинул комнату. Вам ничего не оставалось как сделать то же самое и отправиться в космопорт.\r\n\r\n<clr>Ваша миссия провалена<clrEnd>."
+            ],
+            "expression": "[p9]",
+            "id": 37,
+            "modifiers": [
+                {
+                    "expression": "",
+                    "operation": "OPERATION_CHANGE",
+                    "param": 7,
+                    "value": 0,
+                    "visibility": "VISIBILITY_HIDE"
+                }
+            ],
+            "transitions": {
+            },
+            "type": "LOCATION_FAIL",
+            "x": 448,
+            "y": 544
+        },
+        "location40": {
+            "day": false,
+            "death": false,
+            "descriptionExpression": false,
+            "descriptions": [
+            ],
+            "expression": "",
+            "id": 40,
+            "modifiers": [
+            ],
+            "transitions": {
+                "transition205": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 40,
+                    "globalCondition": "",
+                    "id": 205,
+                    "modifiers": [
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "",
+                    "to": 29
+                }
+            },
+            "type": "LOCATION_NORMAL",
+            "x": 576,
+            "y": 181
+        },
+        "location41": {
+            "day": false,
+            "death": false,
+            "descriptionExpression": false,
+            "descriptions": [
+                "Космопорт планеты <ToPlanet> встретил вас оглушительной музыкой и бешено крутящимися в воздухе разноцветными бумажками. Так малоки представляют себе праздничную атмосферу, связанную с церемонией коронации.\r\n\r\nНа стоянке было полно свободных гравитакси, поэтому вы быстро добрались до места встречи. Им оказался офис в огромном деловом центре. За столом в кабинете сидел неприметной внешности пеленг.\r\n\r\n- Меня зовут Иксс, по контракту с планетой <ToPlanet> я занимаюсь организационными вопросами, связанными с коронацией Великого Малокрха. Видели все это безобразие там? - пеленг поморщился, указывая в сторону окна. - Местные жители желают, чтобы новый Малокрх обязательно принес клятву на священном черепе первого Малокрха, который хранится в специальном сейфе. Метод открытия которого известен только Хранителю. Система была надежной: код и способ открытия сейфа передавались от Хранителя к Хранителю, которые меняли друг друга раз в пять лет. Но четыре месяца назад недоброжелатели убили Хранителя, и мы оказались перед проблемой. Коронация назначена на <Date>, а сейф с черепом так и не открыт. Мы тщательно обыскали бумаги покойного Хранителя, и нашли только это, - пеленг вынул из-под кипы документов лист бумаги и положил поближе к вам.\r\n\r\n- Очевидно, это и есть нужная комбинация чисел для замка сейфа, потому как замок имеет именно такую структуру. Проблема в том, что сам код надо еще суметь набрать, ведь его приходится складывать из другой комбинации чисел, по определенным правилам. Между тем, после каждого очередного открытия-закрытия сейфа исходная комбинация генерируется сейфом случайно, и нужно иметь недюжинную сноровку, чтобы набрать код. А если за определенное сейфом время открывающий код не будет набран, то сейф самоблокируется: поменяется исходная комбинация, и сейф еще в течение 600 часов будет невозможно открыть, даже введя открывающий код... Кстати, время предыдущей самоблокировки подходит к концу. Пойдемте скорее к сейфу."
+            ],
+            "expression": "",
+            "id": 41,
+            "modifiers": [
+                {
+                    "expression": "",
+                    "operation": "OPERATION_ASSIGN",
+                    "param": 1,
+                    "value": 11,
+                    "visibility": "VISIBILITY_HIDE"
+                },
+                {
+                    "expression": "111",
+                    "operation": "OPERATION_EXPRESSION",
+                    "param": 2,
+                    "value": 0,
+                    "visibility": "VISIBILITY_HIDE"
+                },
+                {
+                    "expression": "111",
+                    "operation": "OPERATION_EXPRESSION",
+                    "param": 3,
+                    "value": 0,
+                    "visibility": "VISIBILITY_HIDE"
+                },
+                {
+                    "expression": "111",
+                    "operation": "OPERATION_EXPRESSION",
+                    "param": 4,
+                    "value": 0,
+                    "visibility": "VISIBILITY_HIDE"
+                },
+                {
+                    "expression": "111",
+                    "operation": "OPERATION_EXPRESSION",
+                    "param": 5,
+                    "value": 0,
+                    "visibility": "VISIBILITY_HIDE"
+                },
+                {
+                    "expression": "1",
+                    "operation": "OPERATION_EXPRESSION",
+                    "param": 6,
+                    "value": 0,
+                    "visibility": "VISIBILITY_HIDE"
+                },
+                {
+                    "expression": "35",
+                    "operation": "OPERATION_EXPRESSION",
+                    "param": 7,
+                    "value": 0,
+                    "visibility": "VISIBILITY_HIDE"
+                },
+                {
+                    "expression": "[1..4]",
+                    "operation": "OPERATION_EXPRESSION",
+                    "param": 8,
+                    "value": 0,
+                    "visibility": "VISIBILITY_HIDE"
+                },
+                {
+                    "expression": "",
+                    "operation": "OPERATION_CHANGE",
+                    "param": 9,
+                    "value": 0,
+                    "visibility": "VISIBILITY_HIDE"
+                }
+            ],
+            "transitions": {
+                "transition206": {
+                    "alwaysVisible": false,
+                    "conditions": [
+                        {
+                            "includeMultiples": true,
+                            "includeValues": true,
+                            "multiples": [
+                            ],
+                            "param": 7,
+                            "rangeFrom": 1,
+                            "rangeTo": 200,
+                            "values": [
+                            ]
+                        }
+                    ],
+                    "day": false,
+                    "description": "",
+                    "from": 41,
+                    "globalCondition": "",
+                    "id": 206,
+                    "modifiers": [
+                        {
+                            "expression": "",
+                            "operation": "OPERATION_CHANGE",
+                            "param": 7,
+                            "value": 0,
+                            "visibility": "VISIBILITY_NO_CHANGE"
+                        }
+                    ],
+                    "passCount": 0,
+                    "position": 5,
+                    "priority": 1,
+                    "title": "Пойти к сейфу",
+                    "to": 29
+                }
+            },
+            "type": "LOCATION_START",
+            "x": 448,
+            "y": 302
+        }
+    },
+    "money": "<Money>",
+    "parameters": {
+        "[p1]": {
+            "active": true,
+            "critText": "Сообщение достижения критического значения параметром 1",
+            "id": 1,
+            "max": 44,
+            "mid": 27,
+            "min": 11,
+            "minCritical": true,
+            "money": false,
+            "name": "Координаты пустой ячейки",
+            "ranges": [
+                {
+                    "from": 11,
+                    "text": "Координаты пустой ячейки: <>",
+                    "to": 44
+                }
+            ],
+            "showOnZero": true,
+            "start": "[11]",
+            "type": "PARAMETER_NORMAL"
+        },
+        "[p2]": {
+            "active": true,
+            "critText": "Сообщение достижения критического значения параметром 2",
+            "id": 2,
+            "max": 8888,
+            "mid": 4499,
+            "min": 111,
+            "minCritical": true,
+            "money": false,
+            "name": "первый ряд",
+            "ranges": [
+                {
+                    "from": 111,
+                    "text": "первый ряд: <>",
+                    "to": 8888
+                }
+            ],
+            "showOnZero": true,
+            "start": "[111]",
+            "type": "PARAMETER_NORMAL"
+        },
+        "[p3]": {
+            "active": true,
+            "critText": "Сообщение достижения критического значения параметром 3",
+            "id": 3,
+            "max": 8888,
+            "mid": 4499,
+            "min": 111,
+            "minCritical": true,
+            "money": false,
+            "name": "второй ряд",
+            "ranges": [
+                {
+                    "from": 111,
+                    "text": "второй ряд: <>",
+                    "to": 8888
+                }
+            ],
+            "showOnZero": true,
+            "start": "[111]",
+            "type": "PARAMETER_NORMAL"
+        },
+        "[p4]": {
+            "active": true,
+            "critText": "Сообщение достижения критического значения параметром 4",
+            "id": 4,
+            "max": 8888,
+            "mid": 4499,
+            "min": 111,
+            "minCritical": true,
+            "money": false,
+            "name": "третий ряд",
+            "ranges": [
+                {
+                    "from": 111,
+                    "text": "третий ряд: <>",
+                    "to": 8888
+                }
+            ],
+            "showOnZero": true,
+            "start": "[111]",
+            "type": "PARAMETER_NORMAL"
+        },
+        "[p5]": {
+            "active": true,
+            "critText": "Сообщение достижения критического значения параметром 5",
+            "id": 5,
+            "max": 8888,
+            "mid": 4499,
+            "min": 111,
+            "minCritical": true,
+            "money": false,
+            "name": "четвертый ряд",
+            "ranges": [
+                {
+                    "from": 111,
+                    "text": "четвертый ряд: <>",
+                    "to": 8888
+                }
+            ],
+            "showOnZero": true,
+            "start": "[111]",
+            "type": "PARAMETER_NORMAL"
+        },
+        "[p6]": {
+            "active": true,
+            "critText": "Сообщение достижения критического значения параметром 6",
+            "id": 6,
+            "max": 10000,
+            "mid": 5000,
+            "min": 0,
+            "minCritical": true,
+            "money": false,
+            "name": "боковые клетки",
+            "ranges": [
+                {
+                    "from": 0,
+                    "text": "боковые клетки: <>",
+                    "to": 10000
+                }
+            ],
+            "showOnZero": true,
+            "start": "[0]",
+            "type": "PARAMETER_NORMAL"
+        },
+        "[p7]": {
+            "active": true,
+            "critText": "Счетчик оставшихся ходов показывал нуль. Сейф не стал проверять текущий код, а просто заблокировался: экран с цифрами потух, внутри сейфа что-то прожужжало и затихло. Иксс заметно расстроился:\r\n\r\n- К сожалению, <Ranger>, вы не оправдали оказанного вам доверия. А значит, коронация пройдет без черепа. Малоки будут вне себя от ярости, когда узнают об этом. Так что лично я собираюсь побыстрее сваливать с этой планеты. Благо, 70% гонорара мне заплатили вперед, это было мое обязательное условие... \r\n\r\nС этими словами Иксс покинул комнату. Вам ничего не оставалось, кроме как сделать то же самое и отправиться в космопорт.\r\n\r\n<clr>Ваша миссия провалена.<clrEnd>",
+            "id": 7,
+            "max": 200,
+            "mid": 100,
+            "min": 0,
+            "minCritical": true,
+            "money": false,
+            "name": "Переключений осталось",
+            "ranges": [
+                {
+                    "from": 0,
+                    "text": "Переключений осталось: <>",
+                    "to": 200
+                }
+            ],
+            "showOnZero": false,
+            "start": "[1]",
+            "type": "PARAMETER_FAIL"
+        },
+        "[p8]": {
+            "active": true,
+            "critText": "Сообщение достижения критического значения параметром 8",
+            "id": 8,
+            "max": 10,
+            "mid": 5,
+            "min": 0,
+            "minCritical": true,
+            "money": false,
+            "name": "Вариант загадки",
+            "ranges": [
+                {
+                    "from": 0,
+                    "text": "Вариант загадки: <>",
+                    "to": 10
+                }
+            ],
+            "showOnZero": true,
+            "start": "[0]",
+            "type": "PARAMETER_NORMAL"
+        },
+        "[p9]": {
+            "active": true,
+            "critText": "Сообщение достижения критического значения параметром 9",
+            "id": 9,
+            "max": 2,
+            "mid": 1,
+            "min": 1,
+            "minCritical": true,
+            "money": false,
+            "name": "Текстовая",
+            "ranges": [
+                {
+                    "from": 1,
+                    "text": "Параметр номер 9: <>",
+                    "to": 2
+                }
+            ],
+            "showOnZero": false,
+            "start": "[1]",
+            "type": "PARAMETER_NORMAL"
+        }
+    },
+    "ranger": "ДущИкуе",
+    "startLocation": 41,
+    "toPlanet": "Локтарагар",
+    "toStar": "Позитрон"
+}
+

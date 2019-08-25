@@ -101,7 +101,10 @@ export class Quest {
     console.log('location -> ', location);
     if (this.possibleTransition.length === 1 && !this.possibleTransition[0].title) {
       if (this.previousTransition.description) {
-        this.possibleTransition[0].title = 'Далее';
+        this.possibleTransition[0] = {
+          ...Object.assign({}, this.possibleTransition[0]),
+          title: 'Далее',
+        };
         this.onLocationChange(this.getCurrentState());
       } else {
         this.startTransition(this.possibleTransition[0].id);
@@ -168,13 +171,13 @@ export class Quest {
         for (const range of options.ranges) {
           if (parameter.value >= range.from && parameter.value <= range.to) {
             value = range.text.replace('<>', parameter.value);
-            const expressions = value.match(/{(.*?)}/g);
-            if (expressions) {
-              const values = expressions.map(expression => this.evalExpression(expression));
-              values.forEach(val => {
-                value = value.replace(/{(.*?)}/, val);
-              });
-            }
+            // const expressions = value.match(/{(.*?)}/g);
+            // if (expressions) {
+            //   const values = expressions.map(expression => this.evalExpression(expression));
+            //   values.forEach(val => {
+            //     value = value.replace(/{(.*?)}/, val);
+            //   });
+            // }
           }
         }
         if (value) {
@@ -223,9 +226,16 @@ export class Quest {
 
   replaceTags(text) {
     let value = text;
-    const expressions = value.match(/\[(.*?)\]/g);
-    if (expressions) {
-      expressions
+    const expressionsTags = value.match(/{(.*?)}/g);
+    if (expressionsTags) {
+      const values = expressionsTags.map(expression => this.evalExpression(expression));
+      values.forEach(val => {
+        value = value.replace(/{(.*?)}/, val);
+      });
+    }
+    const expressionsVariables = value.match(/\[(.*?)\]/g);
+    if (expressionsVariables) {
+      expressionsVariables
         .map(variable => variable.replace(/\[(.*?)\]/, '$1'))
         .map(expression => this.resolveVariable(expression))
         .forEach(val => {
@@ -346,7 +356,7 @@ export class Quest {
       return +variable;
     } else if (variable[0] == 'p') {
       return +this.parameters[`[${variable}]`].value;
-    } else if (/\d\.\.\d/.test(variable)) {
+    } else if (/(\d{1,})\.\.(\d{1,})/.test(variable)) {
       const nums = variable.split('..');
       return getRandomInt(nums[0], nums[1]);
     }
@@ -370,8 +380,9 @@ export class Quest {
     }
     const result = eval(
       value
-        .replace(/ mod /g, '%')
+        .replace(/(\d{1,}) mod (\d{1,})/g, 'Math.floor($1%$2)')
         .replace(/(\d{1,}) div (\d{1,})/g, 'Math.floor($1/$2)')
+        .replace(/(\d{1,})\/(\d{1,})/g, 'Math.floor($1/$2)')
         .replace(/ and /g, '&&')
         .replace(/ not /g, '!')
         .replace(/ or /g, '||')

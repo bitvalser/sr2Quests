@@ -6,7 +6,7 @@ const replaceTags = text => {
     res = res.replace(new RegExp(`<${tag}>`, 'gim'), `<span class="tag">${Tags[tag]}</span>`);
   });
   return res
-    .replace(/\n/g, '<br><br>')
+    .replace(/\n/g, '<br>')
     .replace(/<clr>/g, '<span class="tag">')
     .replace(/<clrEnd>/g, '</span>');
 };
