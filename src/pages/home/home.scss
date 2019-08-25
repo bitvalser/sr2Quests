@@ -1,5 +1,5 @@
 page-home {
-  background: url('../../assets/imgs/BG.jpg');
+  background: url('../assets/imgs/BG.jpg');
   background-size: cover;
   .container {
     font-family: Verdana, Geneva, sans-serif;
@@ -20,7 +20,7 @@ page-home {
     .border {
       width: 8px;
       height: 100%;
-      background: url('../../assets/imgs/line.png');
+      background: url('../assets/imgs/line.png');
       margin-left: -1px;
       margin-top: 10px;
     }
@@ -32,13 +32,13 @@ page-home {
       margin-left: 1%;
       align-items: center;
       padding: 4px 8px;
-      background: url('../../assets/imgs/quest-slot.jpg');
+      background: url('../assets/imgs/quest-slot.jpg');
       background-size: 100% 29px;
       border-radius: 9px;
       height: 29px;
       font-size: 11px;
       &.selected {
-        background: url('../../assets/imgs/quest-active.jpg');
+        background: url('../assets/imgs/quest-active.jpg');
         background-size: 100% 29px;
       }
       .name {

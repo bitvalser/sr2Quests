@@ -1,6 +1,6 @@
 page-quest {
   font-family: Verdana, Geneva, sans-serif;
-  background: url('../../assets/imgs/quest-bg.png');
+  background: url('../assets/imgs/quest-bg.png');
   background-size: cover;
   font-size: 12px;
   ::-webkit-scrollbar-thumb {
@@ -25,9 +25,10 @@ page-quest {
       .text {
         display: flex;
         flex: 5;
-        background: url('../../assets/imgs/text-bg.png');
+        background: url('../assets/imgs/text-bg.png');
         background-size: cover;
         background-position: bottom;
+        background-repeat: no-repeat;
         overflow: hidden;
         .content {
           overflow: auto;
@@ -48,25 +49,33 @@ page-quest {
       .buttons {
         display: flex;
         flex: 3;
-        background: url('../../assets/imgs/buttons-bg.png');
+        background: url('../assets/imgs/buttons-bg.png');
         background-size: cover;
-        .buttons-wrapper {
-          flex-direction: column;
-          overflow: hidden;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        .scroll-wrapper {
           display: flex;
-          border-radius: 15px 15px 0 0;
           margin: 6px;
           margin-bottom: 0;
           width: 100%;
+          border-radius: 15px 15px 0 0;
+          overflow: hidden;
+        }
+        .buttons-wrapper {
+          flex-direction: column;
+          overflow: auto;
+          display: flex;
+          border-radius: 15px 15px 0 0;
+          width: 100%;
           align-items: center;
-          &:first-child {
-            margin-top: 12px;
-          }
         }
         .button {
           width: 95%;
           text-align: left;
           padding: 3px;
+          &:first-child {
+            margin-top: 6px;
+          }
           .btn-text {
             display: inline-block;
             margin-left: 18px;
@@ -95,6 +104,7 @@ page-quest {
       .parameters {
         color: #acb2a8;
         margin: 10px;
+        position: relative;
         .parameters-text {
           position: absolute;
           margin: 6px;
