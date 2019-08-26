@@ -100,7 +100,10 @@ export class Quest {
 
     console.log('location -> ', location);
     if (this.possibleTransition.length === 1 && !this.possibleTransition[0].title) {
-      if (this.previousTransition.description) {
+      if (
+        (this.previousTransition.description && this.previousTransition.description.length > 20) || // need be find another way
+        (location.descriptions[this.locationTextIndex] && location.descriptions[this.locationTextIndex].length > 20) // too
+      ) {
         this.possibleTransition[0] = {
           ...Object.assign({}, this.possibleTransition[0]),
           title: 'Далее',
@@ -132,7 +135,11 @@ export class Quest {
     const location = this.locations[`location${this.currentLocationId}`];
     if (location.description) {
       return location.description;
-    } else if (this.locationTextIndex !== null && location.descriptions[this.locationTextIndex]) {
+    } else if (
+      this.locationTextIndex !== null &&
+      location.descriptions[this.locationTextIndex] &&
+      location.descriptions[this.locationTextIndex].length > 20 // ned be find another solution
+    ) {
       return location.descriptions[this.locationTextIndex];
     } else if (this.previousTransition.description) {
       return this.previousTransition.description;
@@ -194,7 +201,7 @@ export class Quest {
       const parmOptions = this.parameterOptions[`[p${parameter.id}]`];
       if (parmOptions.type !== 'PARAMETER_NORMAL') {
         let crit = false;
-        if (parmOptions.minCritical && parameter.value < parmOptions.min) {
+        if (parmOptions.minCritical && parameter.value <= parmOptions.min) {
           crit = true;
         } else if (!parmOptions.minCritical && parameter.value >= parmOptions.max) {
           crit = true;
@@ -364,7 +371,7 @@ export class Quest {
 
   evalExpression(exp) {
     console.log(`try to resolve: ${exp}`);
-    let value = exp;
+    let value = exp.replace(/,/g, '.');
     const variables = value.match(/\[(.*?)\]/g);
     if (variables) {
       variables
@@ -392,7 +399,7 @@ export class Quest {
         .replace(/<==/g, '<=')
     );
     console.log(`${exp} -> `, result);
-    return result;
+    return Math.floor(result);
   }
 
   checkCondition(condition) {

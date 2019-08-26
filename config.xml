@@ -4,10 +4,10 @@
 		SR2Quests
 	</name>
     <description>
-		An awesome Ionic/Cordova app.
+		Original text quests from Space Rangers 2
 	</description>
-    <author email="hi@ionicframework.com" href="http://ionicframework.com/">
-		Ionic Framework Team
+    <author email="bitvalser@gmail.com" href="http://4pda.ru/forum/index.php?showuser=3875723">
+		Valera
 	</author>
     <content src="index.html" />
     <access origin="*" />

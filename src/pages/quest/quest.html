@@ -16,7 +16,7 @@
             (click)="goTransition(btn)"
           >
             <img src="./assets/imgs/arrow.png" />
-            <div class="btn-text">{{ btn.title }}</div>
+            <div class="btn-text" [innerHTML]="btn.title"></div>
           </div>
         </div>
       </div>

@@ -22,7 +22,10 @@ export class QuestPage implements OnInit {
       this.questPlayer.start(state => {
         console.log(state);
         this.text = helper.replaceTags(state.text);
-        this.buttons = state.transitions;
+        this.buttons = state.transitions.slice().map(transition => ({
+          ...transition,
+          title: helper.replaceTags(transition.title),
+        }));
         this.parameters = state.parameters.join('<br>');
       });
     });
